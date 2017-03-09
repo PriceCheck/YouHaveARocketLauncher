@@ -1,0 +1,593 @@
+Initialize engine version: 5.2.0f3 (e7947df39b5c)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce 820M (ID=0x1140)
+    Vendor:   NVIDIA
+    VRAM:     1994 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\Data\ClassArchives\GAT251\CompetiveGame\YouHaveaRocketLauncher_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Data\ClassArchives\GAT251\CompetiveGame\YouHaveaRocketLauncher_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Data\ClassArchives\GAT251\CompetiveGame\YouHaveaRocketLauncher_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading D:\Data\ClassArchives\GAT251\CompetiveGame\YouHaveaRocketLauncher_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: D:\Data\ClassArchives\GAT251\CompetiveGame\YouHaveaRocketLauncher_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Data\ClassArchives\GAT251\CompetiveGame\YouHaveaRocketLauncher_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Data\ClassArchives\GAT251\CompetiveGame\YouHaveaRocketLauncher_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Data\ClassArchives\GAT251\CompetiveGame\YouHaveaRocketLauncher_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Data\ClassArchives\GAT251\CompetiveGame\YouHaveaRocketLauncher_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Data\ClassArchives\GAT251\CompetiveGame\YouHaveaRocketLauncher_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\Data\ClassArchives\GAT251\CompetiveGame\YouHaveaRocketLauncher_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.165 seconds
+desktop: 1366x768 60Hz; virtual: 2646x1124 at 0,-356
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: D:\Data\ClassArchives\GAT251\CompetiveGame\YouHaveaRocketLauncher_Data\Managed\System.dll (this message is harmless)
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 2078 -> priority: 1 
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 14.622953 ms
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 397.
+Total: 1.469282 ms (FindLiveObjects: 0.094741 ms CreateObjectMapping: 0.141322 ms MarkObjects: 1.157819 ms  DeleteObjects: 0.073029 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.781929 ms
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 563.
+Total: 1.085184 ms (FindLiveObjects: 0.086451 ms CreateObjectMapping: 0.068687 ms MarkObjects: 0.884253 ms  DeleteObjects: 0.043028 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Countdown+<Animation>c__Iterator1.MoveNext () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 866.047363 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 619.
+Total: 5.144463 ms (FindLiveObjects: 3.891112 ms CreateObjectMapping: 0.103426 ms MarkObjects: 1.099001 ms  DeleteObjects: 0.049344 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Countdown+<Animation>c__Iterator1.MoveNext () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 843.031860 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 619.
+Total: 5.466584 ms (FindLiveObjects: 4.561408 ms CreateObjectMapping: 0.077372 ms MarkObjects: 0.798986 ms  DeleteObjects: 0.026053 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Countdown+<Animation>c__Iterator1.MoveNext () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CreateLevel.CreateLevelFunc (System.Int32[][] data, Single scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2) [0x00000] in <filename unknown>:0 
+  at CreateLevel.Level1 () [0x00000] in <filename unknown>:0 
+  at CreateLevel.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 912.137512 ms
+
+Unloading 77 unused Assets to reduce memory usage. Loaded Objects now: 437.
+Total: 6.371365 ms (FindLiveObjects: 5.216703 ms CreateObjectMapping: 0.081319 ms MarkObjects: 0.923729 ms  DeleteObjects: 0.146454 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 8.186454 ms
+
+Unloading 44 unused Assets to reduce memory usage. Loaded Objects now: 404.
+Total: 1.275062 ms (FindLiveObjects: 0.080925 ms CreateObjectMapping: 0.084083 ms MarkObjects: 0.929256 ms  DeleteObjects: 0.178824 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.508363 ms
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 572.
+Total: 1.157819 ms (FindLiveObjects: 0.087635 ms CreateObjectMapping: 0.063950 ms MarkObjects: 0.960441 ms  DeleteObjects: 0.043028 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 20.148752 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 630.
+Total: 1.479151 ms (FindLiveObjects: 0.101452 ms CreateObjectMapping: 0.097110 ms MarkObjects: 1.240324 ms  DeleteObjects: 0.037501 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 21.129723 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 630.
+Total: 1.121897 ms (FindLiveObjects: 0.082504 ms CreateObjectMapping: 0.070661 ms MarkObjects: 0.941493 ms  DeleteObjects: 0.025264 ms)
+
