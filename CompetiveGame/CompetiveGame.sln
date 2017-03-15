@@ -1,11 +1,11 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{C9ABE681-4BD5-7EBD-3E13-BC9680FD28FB}") = "CompetiveGame", "Assembly-CSharp-firstpass.csproj", "{5F38BE39-5915-87E6-CB1D-B60F3DAFE75C}"
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompetiveGame.CSharp.Plugins", "CompetiveGame.CSharp.Plugins.csproj", "{F22E4C6F-71F1-EA0D-B2F9-013C76654D8E}"
 EndProject
-Project("{C9ABE681-4BD5-7EBD-3E13-BC9680FD28FB}") = "CompetiveGame", "Assembly-CSharp.csproj", "{5C4FAE9B-ED03-CBBA-AD61-7AE3E15805B3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompetiveGame.CSharp", "CompetiveGame.CSharp.csproj", "{5E25DC1B-1C0E-0F3E-531C-6DC6CBB72F4A}"
 EndProject
-Project("{C9ABE681-4BD5-7EBD-3E13-BC9680FD28FB}") = "CompetiveGame", "Assembly-CSharp-Editor.csproj", "{2640C5BE-4188-A588-DA1A-19AB7A09C5DC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompetiveGame.CSharp.Editor", "CompetiveGame.CSharp.Editor.csproj", "{FD55FC4E-192A-CBEE-C70C-0403038C6E4D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,40 +13,20 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5F38BE39-5915-87E6-CB1D-B60F3DAFE75C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5F38BE39-5915-87E6-CB1D-B60F3DAFE75C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5F38BE39-5915-87E6-CB1D-B60F3DAFE75C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5F38BE39-5915-87E6-CB1D-B60F3DAFE75C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5C4FAE9B-ED03-CBBA-AD61-7AE3E15805B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5C4FAE9B-ED03-CBBA-AD61-7AE3E15805B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5C4FAE9B-ED03-CBBA-AD61-7AE3E15805B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5C4FAE9B-ED03-CBBA-AD61-7AE3E15805B3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2640C5BE-4188-A588-DA1A-19AB7A09C5DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2640C5BE-4188-A588-DA1A-19AB7A09C5DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2640C5BE-4188-A588-DA1A-19AB7A09C5DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2640C5BE-4188-A588-DA1A-19AB7A09C5DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F22E4C6F-71F1-EA0D-B2F9-013C76654D8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F22E4C6F-71F1-EA0D-B2F9-013C76654D8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F22E4C6F-71F1-EA0D-B2F9-013C76654D8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F22E4C6F-71F1-EA0D-B2F9-013C76654D8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E25DC1B-1C0E-0F3E-531C-6DC6CBB72F4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E25DC1B-1C0E-0F3E-531C-6DC6CBB72F4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E25DC1B-1C0E-0F3E-531C-6DC6CBB72F4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E25DC1B-1C0E-0F3E-531C-6DC6CBB72F4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD55FC4E-192A-CBEE-C70C-0403038C6E4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD55FC4E-192A-CBEE-C70C-0403038C6E4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD55FC4E-192A-CBEE-C70C-0403038C6E4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD55FC4E-192A-CBEE-C70C-0403038C6E4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																																																																																																						GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
-		Policies = $0
-		$0.TextStylePolicy = $1
-		$1.inheritsSet = null
-		$1.scope = text/x-csharp
-		$0.CSharpFormattingPolicy = $2
-		$2.inheritsSet = Mono
-		$2.inheritsScope = text/x-csharp
-		$2.scope = text/x-csharp
-		$0.TextStylePolicy = $3
-		$3.FileWidth = 120
-		$3.TabWidth = 4
-		$3.IndentWidth = 4
-		$3.EolMarker = Unix
-		$3.inheritsSet = Mono
-		$3.inheritsScope = text/plain
-		$3.scope = text/plain
-	EndGlobalSection
-
 EndGlobal
