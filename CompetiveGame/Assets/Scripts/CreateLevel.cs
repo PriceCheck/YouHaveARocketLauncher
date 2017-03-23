@@ -29,9 +29,42 @@ public class CreateLevel : MonoBehaviour {
         { Level2(); }
         else if(level == 3)
         { Level3(); }
+        else if(level == 4)
+        {
+            Level4();
+        }
         
         isInit = true;
     }
+    void Level4()
+    {
+        int[][][] Level4;
+        Level4 = new int[20][][];
+        Level4[0] = new int[][] { new int[] { 1, 0, 0 }, new int[] { 2, 0, 0 }, new int[] { 3, 0, 0 }, new int[] { 4, 0, 0 }, new int[] { 5, 0, 0 }, new int[] { 6, 0, 0 }, new int[] { 7, 0, 0 }, new int[] { 8, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 } };
+        Level4[1] = new int[][] { new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 5, 2 }, new int[] { 0, 5, 2 }, new int[] { 0, 5, 2 }, new int[] { 0, 5, 2 }, new int[] { 0, 5, 2 }, new int[] { 0, 5, 2 }, new int[] { 0, 5, 2 }, new int[] { 0, 5, 2 }, new int[] { 5, 5, 2 }, new int[] { 5, 5, 2 }, new int[] { 6, 5, 2 }, new int[] { 6, 5, 2 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 } };
+        Level4[2] = new int[][] { new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 5, 2 }, new int[] { 0, 5, 2 }, new int[] { 0, 5, 2 }, new int[] { 0, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 4, 5, 2 }, new int[] { 5, 5, 2 }, new int[] { 6, 5, 2 }, new int[] { 7, 5, 2 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 } };
+        Level4[3] = new int[][] { new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 5, 2 }, new int[] { 0, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 4, 5, 2 }, new int[] { 4, 5, 2 }, new int[] { 7, 5, 2 }, new int[] { 7, 5, 2 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 } };
+        Level4[4] = new int[][] { new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 8, 5, 2 }, new int[] { 8, 5, 2 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 } };
+        Level4[5] = new int[][] { new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 8, 5, 2 }, new int[] { 8, 5, 2 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 } };
+        Level4[6] = new int[][] { new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 0, 5, 2 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 } };
+        Level4[7] = new int[][] { new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 0, 5, 2 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 } };
+        Level4[8] = new int[][] { new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 1, 5, 2 }, new int[] { 1, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 0, 5, 2 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 } };
+        Level4[9] = new int[][] { new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 1, 5, 2 }, new int[] { 1, 5, 2 }, new int[] { 1, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 0, 5, 2 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 } };
+        Level4[10] = new int[][] { new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 1, 5, 2 }, new int[] { 1, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 0, 5, 2 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 } };
+        Level4[11] = new int[][] { new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 1, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 0, 5, 2 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 } };
+        Level4[12] = new int[][] { new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 0, 5, 2 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 } };
+        Level4[13] = new int[][] { new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 8, 5, 2 }, new int[] { 8, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 0, 5, 2 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 } };
+        Level4[14] = new int[][] { new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 8, 5, 2 }, new int[] { 8, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 0, 5, 2 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 } };
+        Level4[15] = new int[][] { new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 7, 5, 2 }, new int[] { 7, 5, 2 }, new int[] { 4, 5, 2 }, new int[] { 4, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 2, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 0, 5, 2 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 } };
+        Level4[16] = new int[][] { new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 7, 5, 2 }, new int[] { 6, 5, 2 }, new int[] { 5, 5, 2 }, new int[] { 4, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 3, 5, 2 }, new int[] { 0, 5, 2 }, new int[] { 0, 5, 2 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 } };
+        Level4[17] = new int[][] { new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 6, 5, 2 }, new int[] { 6, 5, 2 }, new int[] { 5, 5, 2 }, new int[] { 5, 5, 2 }, new int[] { 0, 5, 2 }, new int[] { 0, 5, 2 }, new int[] { 0, 5, 2 }, new int[] { 0, 5, 2 }, new int[] { 0, 5, 2 }, new int[] { 0, 5, 2 }, new int[] { 0, 5, 2 }, new int[] { 0, 5, 2 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 } };
+        Level4[18] = new int[][] { new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 } };
+        Level4[19] = new int[][] { new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 } };
+
+        CreateLevel2(Level4, 1.75f, new Vector3(0, 4, 0));
+    }
+
+
     //The hill
     void Level1()
     {
@@ -79,7 +112,7 @@ public class CreateLevel : MonoBehaviour {
         Level1[38] = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
         Level1[39] = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
-        CreateLevelFunc(Level1, 1.75f, new Vector3(0, 4, 0), new Vector3(14, 8, 36), new Vector3(55, 8, 36), new Vector3(0,90,0), new Vector3(0,-90,0));
+        CreateLevelFunc(Level1, 1.75f, new Vector3(-35, 0,-35), new Vector3(0, 15, 0), new Vector3(0, 15, 0), new Vector3(0,90,0), new Vector3(0,-90,0));
     }
 
     //The Tower
@@ -220,4 +253,42 @@ public class CreateLevel : MonoBehaviour {
         player2.transform.rotation = Quaternion.Euler(rotation2.x, rotation2.y, rotation2.z);
 
     }
+
+void CreateLevel2(int[][][] data, float scale, Vector3 startingPos)
+    {
+        Vector3 newScale = new Vector3(scale, scale, scale);
+        //iterate through list rows
+        for (int i = 0; i < data.Length; ++i)
+        {
+            //iterate through points in each row
+            for (int j = 0; j < data[i].Length; ++j)
+            {
+                //Each point is made up of 3 parts
+                int firstDepth = data[i][j][0];
+                int SecondDepth = data[i][j][0] + data[i][j][1];
+                int totalDepth = data[i][j][0] + data[i][j][1] + data[i][j][2];
+                //iterate through point height
+                for (int k = 0; k < totalDepth; ++k)
+                {
+                    if(k < firstDepth)
+                    {
+                        Vector3 newPos = new Vector3(startingPos.x + (i * scale), startingPos.y + (k * scale), startingPos.z + (j * scale));
+                        GameObject obj = (GameObject)Instantiate(destructablePrefab, newPos, Quaternion.identity);
+                        obj.transform.localScale = newScale;
+                    }
+                    else if(k < SecondDepth)
+                    {
+                        //Skip the blocks in the middle
+                    }
+                    else if(k < totalDepth)
+                    {
+                        Vector3 newPos = new Vector3(startingPos.x + (i * scale), startingPos.y + (k * scale), startingPos.z + (j * scale));
+                        GameObject obj = (GameObject)Instantiate(destructablePrefab, newPos, Quaternion.identity);
+                        obj.transform.localScale = newScale;
+                    }
+                }
+            }
+        }
+    }
+
 }
