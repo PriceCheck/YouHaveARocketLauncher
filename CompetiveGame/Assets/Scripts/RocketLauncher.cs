@@ -13,7 +13,7 @@ public class RocketLauncher : MonoBehaviour {
 
     void Start()
     {
-        StartCoroutine(Setup());
+      //  StartCoroutine(Setup());
     }
 
    public void onShoot()

@@ -17,7 +17,7 @@ public class Countdown : MonoBehaviour {
 	void Start () {
         startingScale = transform.localScale;
         UI = GetComponent<Text>();
-        StartCoroutine(AnimationStart());
+      //  StartCoroutine(AnimationStart());
         
 	}
 	

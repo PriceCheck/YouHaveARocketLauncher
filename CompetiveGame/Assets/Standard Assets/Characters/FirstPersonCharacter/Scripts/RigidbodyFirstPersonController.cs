@@ -106,6 +106,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private float Y_Look_Multiplier = 0.2f;
         [HideInInspector]
         public bool Deactivated = true;
+        public GameObject VerticalLookTarget;
 
         public AudioSource JumpSound;
         public AudioSource[] Step;
@@ -186,11 +187,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 // always move along the camera forward as it is the direction that it being aimed at
                 Vector3 desiredMove = cam.transform.forward*input.y + cam.transform.right*input.x;
-                desiredMove = Vector3.ProjectOnPlane(desiredMove, m_GroundContactNormal).normalized;
+                desiredMove = Vector3.ProjectOnPlane(desiredMove, m_GroundContactNormal);
 
-                desiredMove.x = desiredMove.x*movementSettings.CurrentTargetSpeed;
-                desiredMove.z = desiredMove.z*movementSettings.CurrentTargetSpeed;
-                desiredMove.y = desiredMove.y*movementSettings.CurrentTargetSpeed;
+                desiredMove.x = desiredMove.x * movementSettings.CurrentTargetSpeed;
+                desiredMove.z = desiredMove.z * movementSettings.CurrentTargetSpeed;
+                desiredMove.y = desiredMove.y * movementSettings.CurrentTargetSpeed;
                 if (m_RigidBody.velocity.sqrMagnitude <
                     (movementSettings.CurrentTargetSpeed*movementSettings.CurrentTargetSpeed))
                 {
@@ -301,7 +302,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             float Xon = Mathf.Abs(CrossPlatformInputManager.GetAxis(HorizontalLookAxisInputString));
             float Yon = Mathf.Abs(CrossPlatformInputManager.GetAxis(VerticalLookAxisInputString));
             //print (Xon);
-            if (Xon > .05)
+            if (Xon > .01)
             {
                 if(!is_looking_X)
                 {
@@ -320,7 +321,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 is_looking_X = false;
             }
 
-            if (Yon > .05)
+            if (Yon > .01)
             {
                 if (!is_looking_Y)
                 {
