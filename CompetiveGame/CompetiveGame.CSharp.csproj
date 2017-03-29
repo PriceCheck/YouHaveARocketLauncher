@@ -124,6 +124,7 @@
     <Compile Include="Assets\Game Jam Menu Template\Scripts\StartOptions.cs" />
     <Compile Include="Assets\Materials\SportsBallResource\Player1Controller.cs" />
     <Compile Include="Assets\Scripts\CameraFade.cs" />
+    <Compile Include="Assets\Scripts\CharacterControllerNuevo.cs" />
     <Compile Include="Assets\Scripts\Countdown.cs" />
     <Compile Include="Assets\Scripts\CreateLevel.cs" />
     <Compile Include="Assets\Scripts\CreditsExampleScript.cs" />

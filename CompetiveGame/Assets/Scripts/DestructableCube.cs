@@ -13,8 +13,8 @@ public class DestructableCube : MonoBehaviour {
 
     void OnCollisionEnter(Collision col)
     {
-        //print("Look ma " + col.gameObject.name);
-        if(col.gameObject.tag == "boom")
+       // print("Look ma " + col.gameObject.name + " " + col.gameObject.tag);
+        if(col.gameObject.tag == "Boom")
         {
             timeRemaining = deathAnimationTime;
             StartCoroutine(Animation());

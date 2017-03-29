@@ -29,12 +29,12 @@ public class OuterExplosion : MonoBehaviour {
 
     void OnCollisionEnter(Collision col)
     {
-        if ((col.gameObject.tag == "Player" || col.gameObject.tag == "Player2") && col.contacts.Length > 0)
+        if ( (col.gameObject.tag == "Player" || col.gameObject.tag == "Player2") && col.contacts.Length > 0)
         {
             //Bounce
             var direction = col.contacts[0].point - this.gameObject.transform.position;
             direction.Normalize();
-            col.gameObject.BroadcastMessage("Bounce", direction, SendMessageOptions.DontRequireReceiver);
+         //   col.gameObject.BroadcastMessage("Bounce", direction, SendMessageOptions.DontRequireReceiver);
         }
     }
 

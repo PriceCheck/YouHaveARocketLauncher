@@ -5,11 +5,11 @@ public class RocketLauncher : MonoBehaviour {
 
     public float RocketSpeed = 20;
     public float ReloadTime = 1.0f;
-    AmmoUI indicator;
+    //AmmoUI indicator;
     private bool canShoot = true;
     public GameObject prefab;
     public int playerNumber = 1;
-    public bool Deactived = true;
+    public bool Deactived = false;
 
     void Start()
     {
@@ -19,8 +19,9 @@ public class RocketLauncher : MonoBehaviour {
    public void onShoot()
     {
         if (Deactived) return;
-        if (canShoot && indicator != null && indicator.gameObject.activeInHierarchy && indicator.ReloadAmmo(ReloadTime))
+        if (canShoot )//&& indicator != null && indicator.gameObject.activeInHierarchy && indicator.ReloadAmmo(ReloadTime))
         {
+            
             GameObject rocket = (GameObject)Instantiate(prefab, transform.position + (transform.forward * 2), transform.rotation);
             rocket.GetComponent<Rigidbody>().velocity = transform.forward * RocketSpeed;
             StartCoroutine(Cooldown());
@@ -30,7 +31,7 @@ public class RocketLauncher : MonoBehaviour {
     IEnumerator Setup()
     {
         yield return new WaitForSeconds(0.001f);
-       indicator = GameObject.FindObjectOfType<GameplayManager>().GetAmmoUI(playerNumber);
+     //  indicator = GameObject.FindObjectOfType<GameplayManager>().GetAmmoUI(playerNumber);
 
     }
 

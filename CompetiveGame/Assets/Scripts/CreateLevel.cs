@@ -3,12 +3,14 @@ using System.Collections;
 
 public class CreateLevel : MonoBehaviour {
     public GameObject destructablePrefab;
+    public GameObject PlayerPrefab;
+    public Material[] PlayerMaterials;
+    public Rect[] CameraSizes;
     public Material Bottom;
     public Material Tier1;
     public Material Tier2;
     public Material TierFinal;
-    public GameObject player1;
-    public GameObject player2;
+
     private bool isInit = false;
     public int level = 0;
 
@@ -246,12 +248,17 @@ public class CreateLevel : MonoBehaviour {
             }
 
         }
-        player1.transform.position = play1pos;
-        player1.transform.rotation = Quaternion.Euler(rotation1.x, rotation1.y, rotation1.z);
+        GameObject Player1 = Instantiate(PlayerPrefab, play1pos, Quaternion.Euler(rotation1.x, rotation1.y, rotation1.z));
+        Player1.GetComponent<CharacterControllerNuevo>().Model.material = PlayerMaterials[0];
+        Player1.GetComponent<CharacterControllerNuevo>().CharacterID = 0;
+        Player1.GetComponent<CharacterControllerNuevo>().FindController();
+        
 
-        player2.transform.position = play2pos;
-        player2.transform.rotation = Quaternion.Euler(rotation2.x, rotation2.y, rotation2.z);
-
+       GameObject Player2 = Instantiate(PlayerPrefab, play2pos, Quaternion.Euler(rotation2.x, rotation2.y, rotation2.z));
+        Player2.GetComponent<CharacterControllerNuevo>().Model.material = PlayerMaterials[1];
+        Player2.GetComponent<CharacterControllerNuevo>().CharacterID = 1;
+        Player2.GetComponent<CharacterControllerNuevo>().FindController();
+        Player2.GetComponent<CharacterControllerNuevo>().SetCamera(CameraSizes[1]);
     }
 
 void CreateLevel2(int[][][] data, float scale, Vector3 startingPos)
