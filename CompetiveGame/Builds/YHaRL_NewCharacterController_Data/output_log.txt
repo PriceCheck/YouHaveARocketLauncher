@@ -21,7 +21,7 @@ Platform assembly: C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\Compe
 Loading C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_NewCharacterController_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
 Platform assembly: C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_NewCharacterController_Data\Managed\XInputDotNetPure.dll (this message is harmless)
 Loading C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_NewCharacterController_Data\Managed\XInputDotNetPure.dll into Unity Child Domain
-- Completed reload, in  0.134 seconds
+- Completed reload, in  0.067 seconds
 Platform assembly: C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_NewCharacterController_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_NewCharacterController_Data\Managed\System.dll (this message is harmless)
 OnLevelWasLoaded was found on EventSystemChecker
@@ -35,7 +35,7 @@ desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Input initialized.
 <RI> Initialized touch support.
 WARNING: BC6H/BC7 texture format is not supported, decompressing texture
-UnloadTime: 4.673127 ms
+UnloadTime: 2.886064 ms
 GamePad found One
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -45,4 +45,52 @@ GamePad found Two
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 1cc4 -> priority: 1 
+  Thread -> id: 1358 -> priority: 1 
+Initialize engine version: 5.5.0f3 (38b4efef76f0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvd3dum.dll 9.18.13.4725]
+    Renderer: NVIDIA GeForce 820M
+    Vendor:   NVIDIA
+    VRAM:     1994 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 NULL=1 RESZ=0 SlowINTZ=0 ATOC=1 BC4=1 BC5=1
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_NewCharacterController_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_NewCharacterController_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_NewCharacterController_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_NewCharacterController_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_NewCharacterController_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_NewCharacterController_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_NewCharacterController_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_NewCharacterController_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_NewCharacterController_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_NewCharacterController_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_NewCharacterController_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_NewCharacterController_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_NewCharacterController_Data\Managed\XInputDotNetPure.dll (this message is harmless)
+Loading C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_NewCharacterController_Data\Managed\XInputDotNetPure.dll into Unity Child Domain
+- Completed reload, in  0.112 seconds
+Platform assembly: C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_NewCharacterController_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_NewCharacterController_Data\Managed\System.dll (this message is harmless)
+OnLevelWasLoaded was found on EventSystemChecker
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+ 
+(Filename:  Line: 382)
+
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+WARNING: BC6H/BC7 texture format is not supported, decompressing texture
+UnloadTime: 4.031253 ms
+GamePad found One
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+GamePad found Two
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 1590 -> priority: 1 
