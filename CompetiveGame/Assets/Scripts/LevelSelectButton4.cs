@@ -27,7 +27,7 @@ public class LevelSelectButton4 : MonoBehaviour
     public void LoadDelayed()
     {
         //Load the selected scene, by scene index number in build settings
-        Application.LoadLevel(sceneToStart);
+       // Application.LoadLevel(sceneToStart);
     }
 
 
@@ -35,7 +35,7 @@ public class LevelSelectButton4 : MonoBehaviour
     {
 
 
-        m_LevelManager.LoadLevel(sceneToStart);
+       // m_LevelManager.LoadLevel(sceneToStart);
     }
 
 

@@ -11,7 +11,7 @@ public class DestructableCube : MonoBehaviour {
         startingScale = transform.localScale;
 	}
 
-    void OnCollisionEnter(Collision col)
+    void OnTriggerEnter(Collider col)
     {
        // print("Look ma " + col.gameObject.name + " " + col.gameObject.tag);
         if(col.gameObject.tag == "Boom")

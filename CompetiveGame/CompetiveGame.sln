@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompetiveGame.CSharp.Plugin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompetiveGame.CSharp", "CompetiveGame.CSharp.csproj", "{5E25DC1B-1C0E-0F3E-531C-6DC6CBB72F4A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompetiveGame.CSharp.Editor.Plugins", "CompetiveGame.CSharp.Editor.Plugins.csproj", "{DE66E6D6-3538-593A-B66E-A1115E21F97B}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompetiveGame.CSharp.Editor", "CompetiveGame.CSharp.Editor.csproj", "{FD55FC4E-192A-CBEE-C70C-0403038C6E4D}"
 EndProject
 Global
@@ -21,6 +23,10 @@ Global
 		{5E25DC1B-1C0E-0F3E-531C-6DC6CBB72F4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E25DC1B-1C0E-0F3E-531C-6DC6CBB72F4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E25DC1B-1C0E-0F3E-531C-6DC6CBB72F4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE66E6D6-3538-593A-B66E-A1115E21F97B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE66E6D6-3538-593A-B66E-A1115E21F97B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE66E6D6-3538-593A-B66E-A1115E21F97B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE66E6D6-3538-593A-B66E-A1115E21F97B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FD55FC4E-192A-CBEE-C70C-0403038C6E4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FD55FC4E-192A-CBEE-C70C-0403038C6E4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD55FC4E-192A-CBEE-C70C-0403038C6E4D}.Release|Any CPU.ActiveCfg = Release|Any CPU

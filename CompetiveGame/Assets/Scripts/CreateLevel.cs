@@ -252,6 +252,7 @@ public class CreateLevel : MonoBehaviour {
         Player1.GetComponent<CharacterControllerNuevo>().Model.material = PlayerMaterials[0];
         Player1.GetComponent<CharacterControllerNuevo>().CharacterID = 0;
         Player1.GetComponent<CharacterControllerNuevo>().FindController();
+        Player1.name = "Player1";
         
 
        GameObject Player2 = Instantiate(PlayerPrefab, play2pos, Quaternion.Euler(rotation2.x, rotation2.y, rotation2.z));
@@ -259,6 +260,7 @@ public class CreateLevel : MonoBehaviour {
         Player2.GetComponent<CharacterControllerNuevo>().CharacterID = 1;
         Player2.GetComponent<CharacterControllerNuevo>().FindController();
         Player2.GetComponent<CharacterControllerNuevo>().SetCamera(CameraSizes[1]);
+        Player2.name = "Player2";
     }
 
 void CreateLevel2(int[][][] data, float scale, Vector3 startingPos)

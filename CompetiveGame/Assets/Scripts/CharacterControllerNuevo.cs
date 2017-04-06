@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using XInputDotNetPure; // Required in C#
+using UnityStandardAssets.ImageEffects;
+using com.ootii.Messages;
 
 public class CharacterControllerNuevo : MonoBehaviour {
     public int CharacterID = -1;
@@ -19,7 +21,7 @@ public class CharacterControllerNuevo : MonoBehaviour {
     CharacterController myCharacterController;
     float rotationSpeed = 120;
     float MoveSpeed = 14;
-    float Gravity = -0.9f;
+    float Gravity = -0.6f;
     float Drag = 0.15f;
     float TerminalVel = -0.25f;
     float AirMovementDampening = 0.6f;
@@ -27,10 +29,17 @@ public class CharacterControllerNuevo : MonoBehaviour {
     float JumpHeight = 0.3f;
     float VerticalMovement = 0;
     float triggerThreshold = 0.9f;
+    //Explosion Stuff
+    Vector3 ExplosionKnockback = Vector3.zero;
+    float ExplosionAmount = 20.0f;
+    //
     bool isJumping = false;
     bool firePressed = false;
+    float blurCounter = 0;
+    float maxBlurAmount = 5f;
+    TiltShift PlayerTiltShift;
 
-
+    public AnimationCurve TiltShiftRamp = AnimationCurve.EaseInOut(0, 0, 1, 1);
     public AnimationCurve LookRamp = AnimationCurve.EaseInOut(-1, 0, 1, 1);
     public AnimationCurve MoveRamp = AnimationCurve.EaseInOut(-1, 0, 1, 1);
 
@@ -42,8 +51,16 @@ public class CharacterControllerNuevo : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         myCharacterController = GetComponent<CharacterController>();
+        PlayerTiltShift = myCamera.GetComponent<TiltShift>();
+        
 	}
-	
+
+    public void OnExplosionHit(Vector3 normal)
+    {
+            print("Exploded");
+            ExplosionKnockback = normal * ExplosionAmount;
+    }
+
    public  void FindController()
     {
 
@@ -56,7 +73,6 @@ public class CharacterControllerNuevo : MonoBehaviour {
                 GamePadState testState = GamePad.GetState(testPlayerIndex);
                 if (testState.IsConnected)
                 {
-                     Debug.Log(string.Format("GamePad found {0}", testPlayerIndex));
                     playerIndex = testPlayerIndex;
                     playerIndexSet = true;
                   
@@ -92,7 +108,7 @@ public class CharacterControllerNuevo : MonoBehaviour {
         Vector2 LookVector = new Vector2(-state.ThumbSticks.Right.Y, state.ThumbSticks.Right.X);
         LookVector = LookRamp.Evaluate(LookVector.magnitude) * LookVector.normalized;
 
-        Vector3 newAngle = RotationTarget.transform.rotation.eulerAngles + new Vector3(LookVector.x * rotationSpeed * Time.fixedDeltaTime, LookVector.y * rotationSpeed * Time.fixedDeltaTime, 0);//LookVector.y * rotationSpeed * Time.fixedDeltaTime);
+        Vector3 newAngle = RotationTarget.transform.rotation.eulerAngles + new Vector3(Mathf.Clamp(LookVector.x * rotationSpeed * Time.fixedDeltaTime,-178,178), LookVector.y * rotationSpeed * Time.fixedDeltaTime, 0);//LookVector.y * rotationSpeed * Time.fixedDeltaTime);
         RotationTarget.transform.rotation = Quaternion.Euler(newAngle);
         //Ground Check
         if (myCharacterController.isGrounded)
@@ -121,16 +137,44 @@ public class CharacterControllerNuevo : MonoBehaviour {
         {
             isJumping = false;
         }
+        //Cap vertical Movement
         VerticalMovement += Gravity * Time.fixedDeltaTime;
         VerticalMovement -= (VerticalMovement * Drag * Time.fixedDeltaTime);
         VerticalMovement = Mathf.Clamp(VerticalMovement, TerminalVel, float.MaxValue);
         DeltaMove += new Vector3(0, VerticalMovement, 0);
+        //Cap Explosion Knockback
+        ExplosionKnockback -= (ExplosionKnockback * Drag * Time.fixedDeltaTime);
+        ExplosionKnockback.y += Gravity * Time.fixedDeltaTime; 
+        myCharacterController.Move(DeltaMove + (ExplosionKnockback * Time.fixedDeltaTime));
+     //   print(ExplosionKnockback + " mag: " + ExplosionKnockback.magnitude);
+        if (myCharacterController.isGrounded)
+        {
+            ExplosionKnockback.y = 0;
+            ExplosionKnockback -= (3 * ExplosionKnockback * Time.fixedDeltaTime);
+        }
+        //print(DeltaMove + (ExplosionKnockback * Time.fixedDeltaTime));
+        if ((myCharacterController.isGrounded && (DeltaMove + (ExplosionKnockback * Time.fixedDeltaTime)).magnitude < 0.1) || (!myCharacterController.isGrounded && ExplosionKnockback.magnitude < ExplosionAmount/4))
+        {
+            ExplosionKnockback = Vector3.zero;
+        }
+ 
+        //Tilt shift
+        if (DeltaMove.magnitude > 0.4f && myCharacterController.isGrounded)
+        {
+            
+            blurCounter += Time.deltaTime;
 
-        myCharacterController.Move(DeltaMove);
-
+        }
+        else
+        {
+            blurCounter -= Time.deltaTime;
+        }
+        blurCounter = Mathf.Clamp01(blurCounter);
+        PlayerTiltShift.blurArea = maxBlurAmount * TiltShiftRamp.Evaluate(blurCounter);
+        //End tilt shift
         //Fire
         //firePressed = ;
-        if(firePressed)
+        if (firePressed)
         {
             if(state.Triggers.Right < triggerThreshold)
             {
@@ -145,7 +189,29 @@ public class CharacterControllerNuevo : MonoBehaviour {
                 myGun.onShoot();
             }
         }
-            
+    }
 
+    void onCollisionEnter(Collision col)
+    {
+        //  print(col.gameObject.name);
+        if (col.gameObject.tag == "Boom" && col.gameObject.GetComponent<OuterExplosion>() != null && col.contacts.Length > 0)
+        {
+            //Bounce
+            OnExplosionHit(col.contacts[0].normal);
+
+            //   col.gameObject.BroadcastMessage("Bounce", direction, SendMessageOptions.DontRequireReceiver);
+        }
+    }
+
+    void OnControllerColliderHit(ControllerColliderHit col)
+    {
+      //  print(col.gameObject.name);
+        if (col.gameObject.tag == "Boom" && col.gameObject.GetComponent<OuterExplosion>() != null)
+        {
+            //Bounce
+            OnExplosionHit(col.normal);
+
+            //   col.gameObject.BroadcastMessage("Bounce", direction, SendMessageOptions.DontRequireReceiver);
+        }
     }
 }
