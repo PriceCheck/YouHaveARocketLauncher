@@ -1,19 +1,27 @@
 ﻿using UnityEngine;
 using System.Collections;
+using com.ootii.Messages;
 
 public class RocketLauncher : MonoBehaviour {
 
     public float RocketSpeed = 20;
-    public float ReloadTime = 1.0f;
+    public float ReloadTime = 0.4f;
     //AmmoUI indicator;
     private bool canShoot = true;
     public GameObject prefab;
-    public int playerNumber = 1;
+    int playerNumber = 1;
     public bool Deactived = false;
 
-    void Start()
+    void Awake()
     {
-      //  StartCoroutine(Setup());
+        //  StartCoroutine(Setup());
+        MessageDispatcher.AddListener("PlayerReloaded", OnReload);
+        playerNumber = this.gameObject.transform.parent.parent.gameObject.GetComponent<CharacterControllerNuevo>().CharacterID;
+    }
+
+    void OnReload(IMessage mess)
+    {
+        canShoot = true;
     }
 
    public void onShoot()
@@ -24,22 +32,13 @@ public class RocketLauncher : MonoBehaviour {
             
             GameObject rocket = (GameObject)Instantiate(prefab, transform.position + (transform.forward * 2), transform.rotation);
             rocket.GetComponent<Rigidbody>().velocity = transform.forward * RocketSpeed;
-            StartCoroutine(Cooldown());
+            canShoot = false;
+
+            PlayerFiredMessage data;
+            data.playerNumber = playerNumber;
+            data.reloadTime = ReloadTime;
+            MessageDispatcher.SendMessage(this, "PlayerFired", data, 0);
         }
     }
 
-    IEnumerator Setup()
-    {
-        yield return new WaitForSeconds(0.001f);
-     //  indicator = GameObject.FindObjectOfType<GameplayManager>().GetAmmoUI(playerNumber);
-
-    }
-
-
-        IEnumerator Cooldown()
-    {
-        canShoot = false;
-        yield return new WaitForSeconds(ReloadTime);
-        canShoot = true;
-    }
 }

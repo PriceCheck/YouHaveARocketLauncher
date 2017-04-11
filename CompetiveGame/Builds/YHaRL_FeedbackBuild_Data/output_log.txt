@@ -1,0 +1,41 @@
+Initialize engine version: 5.5.0f3 (38b4efef76f0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvd3dum.dll 9.18.13.4725]
+    Renderer: NVIDIA GeForce 820M
+    Vendor:   NVIDIA
+    VRAM:     1994 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 NULL=1 RESZ=0 SlowINTZ=0 ATOC=1 BC4=1 BC5=1
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_FeedbackBuild_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_FeedbackBuild_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_FeedbackBuild_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_FeedbackBuild_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_FeedbackBuild_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_FeedbackBuild_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_FeedbackBuild_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_FeedbackBuild_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_FeedbackBuild_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_FeedbackBuild_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_FeedbackBuild_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_FeedbackBuild_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_FeedbackBuild_Data\Managed\XInputDotNetPure.dll (this message is harmless)
+Loading C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_FeedbackBuild_Data\Managed\XInputDotNetPure.dll into Unity Child Domain
+- Completed reload, in  0.131 seconds
+Platform assembly: C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_FeedbackBuild_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Taylor\Documents\GitHub\YouHaveARocketLauncher\CompetiveGame\Builds\YHaRL_FeedbackBuild_Data\Managed\System.dll (this message is harmless)
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+WARNING: BC6H/BC7 texture format is not supported, decompressing texture
+WARNING: BC6H/BC7 texture format is not supported, decompressing texture
+WARNING: Shader Unsupported: 'Hidden/CameraMotionBlurDX11' - Pass '' has no vertex shader
+WARNING: Shader Unsupported: 'Hidden/CameraMotionBlurDX11' - Setting to default shader.
+UnloadTime: 4.980652 ms
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: ef0 -> priority: 1 
+Joystick disconnected ("Controller (XBOX 360 For Windows)").
+ 
+(Filename:  Line: 1258)
+

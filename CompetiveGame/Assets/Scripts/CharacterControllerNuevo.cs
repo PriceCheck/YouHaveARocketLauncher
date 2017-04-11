@@ -57,7 +57,7 @@ public class CharacterControllerNuevo : MonoBehaviour {
 
     public void OnExplosionHit(Vector3 normal)
     {
-            print("Exploded");
+    //        print("Exploded");
             ExplosionKnockback = normal * ExplosionAmount;
     }
 
@@ -108,7 +108,19 @@ public class CharacterControllerNuevo : MonoBehaviour {
         Vector2 LookVector = new Vector2(-state.ThumbSticks.Right.Y, state.ThumbSticks.Right.X);
         LookVector = LookRamp.Evaluate(LookVector.magnitude) * LookVector.normalized;
 
-        Vector3 newAngle = RotationTarget.transform.rotation.eulerAngles + new Vector3(Mathf.Clamp(LookVector.x * rotationSpeed * Time.fixedDeltaTime,-178,178), LookVector.y * rotationSpeed * Time.fixedDeltaTime, 0);//LookVector.y * rotationSpeed * Time.fixedDeltaTime);
+        float VerticalLook = (LookVector.x * rotationSpeed * Time.fixedDeltaTime) + RotationTarget.transform.rotation.eulerAngles.x;
+        if(VerticalLook < 100)
+        {
+            VerticalLook = Mathf.Clamp(VerticalLook, -89, 89);
+        }
+        else
+        {
+            VerticalLook = Mathf.Clamp(VerticalLook, 269, 360 + 89);
+        }
+        VerticalLook -= RotationTarget.transform.rotation.eulerAngles.x;
+
+        Vector3 newAngle = RotationTarget.transform.rotation.eulerAngles + new Vector3(VerticalLook, LookVector.y * rotationSpeed * Time.fixedDeltaTime, 0);//LookVector.y * rotationSpeed * Time.fixedDeltaTime);
+        
         RotationTarget.transform.rotation = Quaternion.Euler(newAngle);
         //Ground Check
         if (myCharacterController.isGrounded)

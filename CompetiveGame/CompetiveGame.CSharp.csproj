@@ -52,6 +52,9 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -66,6 +69,9 @@
     </Reference>
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VR">
       <HintPath>Library\UnityAssemblies\UnityEngine.VR.dll</HintPath>
@@ -122,6 +128,7 @@
     <Compile Include="Assets\Game Jam Menu Template\Scripts\SetAudioLevels.cs" />
     <Compile Include="Assets\Game Jam Menu Template\Scripts\ShowPanels.cs" />
     <Compile Include="Assets\Game Jam Menu Template\Scripts\StartOptions.cs" />
+    <Compile Include="Assets\Scripts\AmmoUI.cs" />
     <Compile Include="Assets\Scripts\CameraFade.cs" />
     <Compile Include="Assets\Scripts\CharacterControllerNuevo.cs" />
     <Compile Include="Assets\Scripts\Countdown.cs" />
@@ -171,6 +178,7 @@
     <None Include="Assets\CameraPath3\versionHistory.txt" />
     <None Include="Assets\Credits\3_Demo\Resources\credits.xml" />
     <None Include="Assets\Credits\3_Demo\credits_Rocket.xml" />
+    <None Include="Assets\Free Guns Pack\READ_ME.txt" />
     <None Include="Assets\Game Jam Menu Template\Fonts\OpenSans\License!.txt" />
     <None Include="Assets\Game Jam Menu Template\GameJamTemplateReadMe.txt" />
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />

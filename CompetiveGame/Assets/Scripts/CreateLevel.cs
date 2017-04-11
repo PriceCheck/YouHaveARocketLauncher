@@ -10,6 +10,7 @@ public class CreateLevel : MonoBehaviour {
     public Material Tier1;
     public Material Tier2;
     public Material TierFinal;
+    public bool PreBuiltLevel = false;
 
     private bool isInit = false;
     public int level = 0;
@@ -219,7 +220,9 @@ public class CreateLevel : MonoBehaviour {
         void CreateLevelFunc(int[][] data, float scale, Vector3 startingPos, Vector3 play1pos, Vector3 play2pos, Vector3 rotation1, Vector3 rotation2)
     {
         Vector3 newScale = new Vector3(scale, scale, scale);
-        for(int i = 0; i < data.Length; ++i)
+        if(!PreBuiltLevel)
+        {
+        for (int i = 0; i < data.Length; ++i)
         {
             for (int j = 0; data[i] != null && j < data[i].Length; ++j)
             {
@@ -247,6 +250,7 @@ public class CreateLevel : MonoBehaviour {
                 }
             }
 
+        }
         }
         GameObject Player1 = Instantiate(PlayerPrefab, play1pos, Quaternion.Euler(rotation1.x, rotation1.y, rotation1.z));
         Player1.GetComponent<CharacterControllerNuevo>().Model.material = PlayerMaterials[0];
