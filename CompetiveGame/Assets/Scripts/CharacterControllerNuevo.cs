@@ -19,7 +19,7 @@ public class CharacterControllerNuevo : MonoBehaviour {
     public MeshRenderer Model;
     public Camera myCamera;
     CharacterController myCharacterController;
-    float rotationSpeed = 120;
+    float rotationSpeed = 270;
     float MoveSpeed = 14;
     float Gravity = -0.6f;
     float Drag = 0.15f;
@@ -48,17 +48,32 @@ public class CharacterControllerNuevo : MonoBehaviour {
     {
 
     }
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start() {
         myCharacterController = GetComponent<CharacterController>();
         PlayerTiltShift = myCamera.GetComponent<TiltShift>();
-        
-	}
+
+    }
 
     public void OnExplosionHit(Vector3 normal)
     {
-    //        print("Exploded");
-            ExplosionKnockback = normal * ExplosionAmount;
+        //        print("Exploded");
+        ExplosionKnockback = normal * ExplosionAmount;
+    }
+
+    public void SetPlayerIndex(int Index)
+    {
+        CharacterID = Index;
+        if (Index == 0)
+        {
+            Model.gameObject.layer = LayerMask.NameToLayer("Player1");
+            myCamera.cullingMask = ~(1 << LayerMask.NameToLayer("Player1"));
+        }
+        else
+        {
+            Model.gameObject.layer = LayerMask.NameToLayer("Player2");
+            myCamera.cullingMask = ~(1 << LayerMask.NameToLayer("Player2"));
+        }
     }
 
    public  void FindController()
@@ -105,20 +120,21 @@ public class CharacterControllerNuevo : MonoBehaviour {
         }
         
         //Rotation
-        Vector2 LookVector = new Vector2(-state.ThumbSticks.Right.Y, state.ThumbSticks.Right.X);
-        LookVector = LookRamp.Evaluate(LookVector.magnitude) * LookVector.normalized;
+        Vector2 LookVector = new Vector2(state.ThumbSticks.Right.Y, state.ThumbSticks.Right.X);
+        LookVector = LookRamp.Evaluate((LookVector.magnitude)) * LookVector.normalized;
+        
 
-        float VerticalLook = (LookVector.x * rotationSpeed * Time.fixedDeltaTime) + RotationTarget.transform.rotation.eulerAngles.x;
+        float VerticalLook = (-LookVector.x * rotationSpeed * Time.fixedDeltaTime) + RotationTarget.transform.rotation.eulerAngles.x;
+
         if(VerticalLook < 100)
         {
-            VerticalLook = Mathf.Clamp(VerticalLook, -89, 89);
+            VerticalLook = Mathf.Clamp(VerticalLook, -50, 70);
         }
         else
         {
-            VerticalLook = Mathf.Clamp(VerticalLook, 269, 360 + 89);
+            VerticalLook = Mathf.Clamp(VerticalLook, 360 - 50, 360 + 70);
         }
         VerticalLook -= RotationTarget.transform.rotation.eulerAngles.x;
-
         Vector3 newAngle = RotationTarget.transform.rotation.eulerAngles + new Vector3(VerticalLook, LookVector.y * rotationSpeed * Time.fixedDeltaTime, 0);//LookVector.y * rotationSpeed * Time.fixedDeltaTime);
         
         RotationTarget.transform.rotation = Quaternion.Euler(newAngle);

@@ -254,14 +254,14 @@ public class CreateLevel : MonoBehaviour {
         }
         GameObject Player1 = Instantiate(PlayerPrefab, play1pos, Quaternion.Euler(rotation1.x, rotation1.y, rotation1.z));
         Player1.GetComponent<CharacterControllerNuevo>().Model.material = PlayerMaterials[0];
-        Player1.GetComponent<CharacterControllerNuevo>().CharacterID = 0;
+        Player1.GetComponent<CharacterControllerNuevo>().SetPlayerIndex(0);
         Player1.GetComponent<CharacterControllerNuevo>().FindController();
         Player1.name = "Player1";
         
 
        GameObject Player2 = Instantiate(PlayerPrefab, play2pos, Quaternion.Euler(rotation2.x, rotation2.y, rotation2.z));
         Player2.GetComponent<CharacterControllerNuevo>().Model.material = PlayerMaterials[1];
-        Player2.GetComponent<CharacterControllerNuevo>().CharacterID = 1;
+        Player2.GetComponent<CharacterControllerNuevo>().SetPlayerIndex(1);
         Player2.GetComponent<CharacterControllerNuevo>().FindController();
         Player2.GetComponent<CharacterControllerNuevo>().SetCamera(CameraSizes[1]);
         Player2.name = "Player2";

@@ -4,7 +4,6 @@ using com.ootii.Messages;
 
 public class RocketLauncher : MonoBehaviour {
 
-    public float RocketSpeed = 20;
     public float ReloadTime = 0.4f;
     //AmmoUI indicator;
     private bool canShoot = true;
@@ -30,8 +29,8 @@ public class RocketLauncher : MonoBehaviour {
         if (canShoot )//&& indicator != null && indicator.gameObject.activeInHierarchy && indicator.ReloadAmmo(ReloadTime))
         {
             
-            GameObject rocket = (GameObject)Instantiate(prefab, transform.position + (transform.forward * 2), transform.rotation);
-            rocket.GetComponent<Rigidbody>().velocity = transform.forward * RocketSpeed;
+            GameObject rocket = (GameObject)Instantiate(prefab, transform.position, transform.rotation);
+            rocket.GetComponent<RocketLogic>().RocketDirection = transform.forward;
             canShoot = false;
 
             PlayerFiredMessage data;

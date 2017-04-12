@@ -40,7 +40,7 @@ public class OuterExplosion : MonoBehaviour {
             Ray ToPlayerRay = new Ray(transform.position, PlayerCharacters[i].gameObject.transform.position - transform.position);
           //  print(PlayerCharacters[i].gameObject.name);
             Debug.DrawRay(ToPlayerRay.origin, ToPlayerRay.direction * scale.x * GetComponent<SphereCollider>().radius, Color.red, 1);
-            int myLayerMask = (1 << LayerMask.NameToLayer("Player"));
+            int myLayerMask = (1 << LayerMask.NameToLayer("Player1")) | (1 << LayerMask.NameToLayer("Player2"));
 
             if (Physics.Raycast(ToPlayerRay, out hit, scale.x * GetComponent<SphereCollider>().radius, myLayerMask))
             {
