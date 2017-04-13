@@ -30,7 +30,7 @@ public class LevelManager : MonoBehaviour {
 
     public void RestartLevel()
     {
-        CameraFade.StartAlphaFade(Color.black, false, FadeTime, 0.2f, () => { Application.LoadLevel(LevelNumber); });
+        CameraFade.StartAlphaFade(Color.black, false, FadeTime, 0.2f, () => { Application.LoadLevel(Application.loadedLevel); });
     }
     public void EnterNewlevel(int index)
     {

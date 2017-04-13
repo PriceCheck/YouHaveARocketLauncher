@@ -20,10 +20,10 @@ public class CharacterControllerNuevo : MonoBehaviour {
     public Camera myCamera;
     CharacterController myCharacterController;
     float rotationSpeed = 270;
-    float MoveSpeed = 14;
-    float Gravity = -0.6f;
+    float MoveSpeed = 10;
+    float Gravity = -0.7f;
     float Drag = 0.15f;
-    float TerminalVel = -0.25f;
+    float TerminalVel = -0.2f;
     float AirMovementDampening = 0.6f;
     float MovementMultiplier = 1;
     float JumpHeight = 0.3f;
@@ -156,7 +156,7 @@ public class CharacterControllerNuevo : MonoBehaviour {
         //Vertical Movement
         //Jump states
 
-        if (!isJumping && state.Buttons.A == ButtonState.Pressed && myCharacterController.isGrounded)
+        if (!isJumping && ExplosionKnockback.magnitude < 0.1 && state.Buttons.A == ButtonState.Pressed && myCharacterController.isGrounded)
         {
             VerticalMovement +=  JumpHeight;
             isJumping = true;
@@ -171,20 +171,30 @@ public class CharacterControllerNuevo : MonoBehaviour {
         VerticalMovement = Mathf.Clamp(VerticalMovement, TerminalVel, float.MaxValue);
         DeltaMove += new Vector3(0, VerticalMovement, 0);
         //Cap Explosion Knockback
-        ExplosionKnockback -= (ExplosionKnockback * Drag * Time.fixedDeltaTime);
-        ExplosionKnockback.y += Gravity * Time.fixedDeltaTime; 
-        myCharacterController.Move(DeltaMove + (ExplosionKnockback * Time.fixedDeltaTime));
-     //   print(ExplosionKnockback + " mag: " + ExplosionKnockback.magnitude);
-        if (myCharacterController.isGrounded)
+
+    
+        if(ExplosionKnockback.magnitude > 0)
         {
-            ExplosionKnockback.y = 0;
-            ExplosionKnockback -= (3 * ExplosionKnockback * Time.fixedDeltaTime);
+            ExplosionKnockback -= 4 * (ExplosionKnockback * Drag * Time.fixedDeltaTime);
+            ExplosionKnockback.y += 6 * Gravity * Time.fixedDeltaTime;
+            ExplosionKnockback += DeltaMove * AirMovementDampening;
+            myCharacterController.Move(ExplosionKnockback * Time.fixedDeltaTime);
         }
-        //print(DeltaMove + (ExplosionKnockback * Time.fixedDeltaTime));
-        if ((myCharacterController.isGrounded && (DeltaMove + (ExplosionKnockback * Time.fixedDeltaTime)).magnitude < 0.1) || (!myCharacterController.isGrounded && ExplosionKnockback.magnitude < ExplosionAmount/4))
+        else
+        {
+            myCharacterController.Move(DeltaMove);
+        }
+
+        //   print(ExplosionKnockback + " mag: " + ExplosionKnockback.magnitude);
+        if ((myCharacterController.isGrounded && ExplosionKnockback.magnitude < 1.5))
         {
             ExplosionKnockback = Vector3.zero;
         }
+        if (myCharacterController.isGrounded && ExplosionKnockback.magnitude < (3 * ExplosionAmount) / 4)
+        {
+            ExplosionKnockback = Vector3.zero;
+        }
+ 
  
         //Tilt shift
         if (DeltaMove.magnitude > 0.4f && myCharacterController.isGrounded)
@@ -233,7 +243,10 @@ public class CharacterControllerNuevo : MonoBehaviour {
 
     void OnControllerColliderHit(ControllerColliderHit col)
     {
-      //  print(col.gameObject.name);
+        if(col.gameObject.GetComponent<DeathPlane>())
+        {
+            col.gameObject.GetComponent<DeathPlane>().CollisionResolution(this.gameObject);
+        }
         if (col.gameObject.tag == "Boom" && col.gameObject.GetComponent<OuterExplosion>() != null)
         {
             //Bounce
